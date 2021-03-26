@@ -22,7 +22,7 @@ module.exports = function (api) {
   })
 
   api.loadSource(async actions => {
-    const { data } = await axios.get('http://localhost:1337/workouts/')
+    const { data } = await axios.get('https://test.vigilantservers.com/workouts/')
 
     const collection = actions.addCollection({
       typeName: 'Workout',
@@ -45,7 +45,7 @@ module.exports = function (api) {
   })
 
   api.loadSource(async actions => {
-    const { data } = await axios.get('http://localhost:1337/nutritions/')
+    const { data } = await axios.get('https://test.vigilantservers.com/nutritions/')
 
     const collection = actions.addCollection({
       typeName: 'Nutrition',
